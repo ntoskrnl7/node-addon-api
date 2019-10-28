@@ -6,11 +6,11 @@
       "cflags_cc!": [ "-fno-exceptions" ],
       "defines": [ "NAPI_DISABLE_CPP_EXCEPTIONS" ],
       "include_dirs": [
-        "<!@(node -p \"require('node-addon-api').include\")"
+        "<!@(node -p \"require('..').include\")"
       ],
       "sources": [
         "calculator.h",
-        "<!@(node -p \"require('node-addon-api').generate()\")"
+        "<!@(node -p \"require('..').generate()\")"
       ]
     }
   ]
